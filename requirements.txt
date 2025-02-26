@@ -1,0 +1,9 @@
+numpy==1.26.4               # use in the implementation
+pandas==2.2.2               # use in the implementation
+tensorflow==2.17.0          # use in the implementation
+scikit-learn==1.5.0         # use in the implementation
+pymiecs         # use in the implementation
+pyGDM2==1.1.6               # use in the implementation
+scipy==1.13.1               # use in the implementation
+matplotlib==3.9.0           # use in the implementation
+seaborn==0.13.2             # use in the implementation
