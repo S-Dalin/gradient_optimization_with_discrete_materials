@@ -15,7 +15,7 @@ def plot_best_geometries_by_weights(
 
     fig, axes = plt.subplots(
         num_geometries, num_weights, figsize=(35, 30), sharex=True, sharey=True
-    )  # (5 rows, num_weights columns)
+    )
     os.makedirs("save_figures", exist_ok=True)
 
     # Loop through each weight
@@ -63,8 +63,6 @@ def plot_best_geometries_by_weights(
             # Draw horizontal lines for Qfwd and Qback at the closest wavelength in the new spectrum
             qfwd_value = np.array(row["mie_Qfwd"]).flatten()[closest_idx]
             qback_value = np.array(row["mie_Qback"]).flatten()[closest_idx]
-            # ax.axhline(y=qfwd_value, color='#8cc5e3ff', linestyle='--', linewidth=4, label=f"Qfwd = {qfwd_value:.1f}")
-            # ax.axhline(y=qback_value, color='#d8a6a6ff', linestyle='--', linewidth=4, label=f"Qback = {qback_value:.1f}")
             ax.set_title(
                 f"Qfwd: {qfwd_value:.1f}, Qback: {qback_value:.1f}", fontsize=24
             )
@@ -102,7 +100,5 @@ def plot_best_geometries_by_weights(
             ax.tick_params(axis="x", labelsize=20)
             ax.tick_params(axis="y", labelsize=20)
 
-    # Adjust layout to prevent overlapping elements
     plt.tight_layout()
-    # plt.savefig("save_figures/new_plot/01_optimized_maxQfwd_minQback_iter100_lr0.01.svg")
     plt.show()

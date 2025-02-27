@@ -1,0 +1,25 @@
+# Ignore all .ipynb checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python bytecode and cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment directories (optional, if you’re using one)
+env/
+.venv/
+
+# Ignore dataset files
+*.pkl
+*.csv
+*.h5
+*.npy
+*.keras
+*.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# figures 
+*.svg
