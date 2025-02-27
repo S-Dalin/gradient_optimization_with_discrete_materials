@@ -10,11 +10,11 @@ This notebook includes step-by-step tutorials on setting up the computational en
 
 
 ## About the Project
-This project uses a gradient-based optimization approach for inverse design with discrete materials, allowing to achieve target optical properties by adjusting latent space. This process integrates forward model and WGAN-GP to allow the gradient-based optimization. 
+This project uses a gradient-based optimization approach for inverse design with discrete materials, allowing to achieve target optical properties by adjusting latent space `z`. This process integrates forward model and WGAN-GP to allow the gradient-based optimization. 
 
 The demonstration includes the data generation, data preprocessing, forward modeling, Re-parametrization of discrete material using WGAN-GP. And combined those pre-trained model to enabled the gradient-based optimization. 
 
-The optimization process include the inverse design on test data and other problem to maximize the Qfwd while minimize the Qback at desired wavelength. 
+The optimization include the inverse design on test data and other problem to maximize the Qfwd while minimize the Qback at desired wavelength. 
 We also compare gradient-based apporach to the global optimization.  
 
 ## Installation
@@ -57,7 +57,7 @@ We also compare gradient-based apporach to the global optimization.
    ```
 
 3. **Forward Modeling (Resnet model) and Model Evaluation**:
-   Train the forward model 
+   Train the forward model. 
    ```bash
    02a_forward_resnet_model_modPW.ipynb
    02b_evaluate_forward_modPW.ipynb
