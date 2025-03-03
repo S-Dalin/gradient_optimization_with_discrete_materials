@@ -97,7 +97,7 @@ We also compare gradient-based apporach to the global optimization.
    python utils_plot.py
    python wgangp_model.py
 
-## Directory Structure
+## Directory Description
 - `datasets/` - Directory where generated datasets are stored.
 - `models/` - folder that save the models from (Forward model and Generator Model)
 - `runtime/` - folder that save the optimization runtime (gradient-based optimization and global optimization).
