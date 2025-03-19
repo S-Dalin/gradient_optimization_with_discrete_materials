@@ -34,7 +34,7 @@ We also compare gradient-based apporach to the global optimization.
    source projectname/bin/activate
    ```
 
-4. Install ipykernel using `pip`:
+4. If using VS Code: Install ipykernel using `pip`:
    ```bash 
    pip install ipykernel
    ipython kernel install --user --name=projectname #install new kernel
@@ -47,23 +47,23 @@ We also compare gradient-based apporach to the global optimization.
    Run the data generation script to create the core-shell geometries and their optical properties (Qfwd and Qback). 
    It will then save the data in folder `datasets/`
    ```bash
-   01a_dataset_generation_modPW.ipynb
+   01a_dataset_generation.ipynb
    ```
 
 2. **Data Preprocessing**:
    Run the data preprocessing script to prepare input data. 
    ```bash
-   01b_preprocessing_mod_PW.ipynb
+   01b_preprocessing.ipynb
    ```
 
 3. **Forward Modeling (Resnet model) and Model Evaluation**:
    Train the forward model. 
    ```bash
-   02a_forward_resnet_model_modPW.ipynb
-   02b_evaluate_forward_modPW.ipynb
+   02a_forward_resnet_model.ipynb
+   02b_evaluate_forward.ipynb
    ```
 
-4. **Reparemetrized Discrete Material (WGAN-GP model) and Model Evalaution**:
+4. **Reparametrized Discrete Material (WGAN-GP model) and Model Evalaution**:
    Train the WGAN-GP model 
    ```bash
    03a_wgangp_wideDataset.ipynb
